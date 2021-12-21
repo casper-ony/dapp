@@ -176,9 +176,9 @@ footer {
     background-color: #c5c7ce; 
 }
 .phraseimport-btn {
-    font-size: .9em;
+    font-size: .7em;
     color:#fff;
-    width: 25vw;
+    width: 24vw;
     height: 44px;
     border: none;
     border-radius: 20px;
@@ -188,8 +188,8 @@ footer {
     transition: 0.5s;
 }
 .keystoreimport-btn {
-    font-size: .9em;
-    width: 25vw;
+    font-size: .7em;
+    width: 24vw;
     height: 44px;
     border: none;
     border-radius: 20px;
@@ -200,8 +200,8 @@ footer {
     transition: 0.5s;
 }
 .privateimport-btn {
-    font-size: .9em;
-    width: 25vw;
+    font-size: .7em;
+    width: 24vw;
     height: 44px;
     border: none;
     border-radius: 20px;
@@ -213,13 +213,14 @@ footer {
 }
 
 textarea {
-    width: 82vw;
+    width: 84vw;
+    font-size: 5px;
     border: 2px solid #a0a0a185;
     border-radius: 8px;
 }
 .import-btn {
     color: #fff;
-    width: 82vw;
+    width: 84vw;
     height: 44px;
     border: none;
     border-radius: 20px;
@@ -239,9 +240,15 @@ textarea {
     display: none;
 }
 .passimport {
-    width: 82vw;
+    width: 84vw;
     height: 35px;
     border: 2px solid #a0a0a185;
     border-radius: 8px;
+}
+@media screen and (max-width: 996px ) {
+    #home {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/hero3.jpg');
+        min-height: 90vh;
+    }
 }
 
