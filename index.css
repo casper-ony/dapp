@@ -176,7 +176,7 @@ footer {
     background-color: #c5c7ce; 
 }
 .phraseimport-btn {
-    font-size: .7em;
+    font-size: .64em;
     color:#fff;
     width: 25vw;
     height: 44px;
@@ -188,7 +188,7 @@ footer {
     transition: 0.5s;
 }
 .keystoreimport-btn {
-    font-size: .7em;
+    font-size: .64em;
     width: 25vw;
     height: 44px;
     border: none;
@@ -200,7 +200,7 @@ footer {
     transition: 0.5s;
 }
 .privateimport-btn {
-    font-size: .7em;
+    font-size: .64em;
     width: 25vw;
     height: 44px;
     border: none;
