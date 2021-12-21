@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Dappsync</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container py-2">
+          <a class="navbar-brand logo-text" href="#">Dappsync</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#validate">Validate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home">
+        <div class="container text-center">
+            <diV class="row justify-content-center">
+                <div class="col-md-10 ">
+                   <h2 class='text-white display-3'>DAPPS Support Token</h2><br>
+                   <h3 class='text-white display-5'>Open protocol for connecting Wallets to Dapps</h3>
+                </div>
+
+            </diV>
+        </div>
+      </section>
+
+      <section id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 section-intro">
+                      <h2>What are Crypto Tokens?</h2>
+                      <div class="h-line"></div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                      <p style="font-size: 1.7rem; font-weight: 450;">
+                        The term crypto token refers to a special virtual currency token or how cryptocurrencies are denominated. 
+                        These tokens represent fungible and
+                        tradable assets or utilities that reside on their own blockchains. Crypto tokens 
+                        are often used to fundraise for crowd sales, but they can 
+                        also be used as a substitute for other things. These tokens are usually created, 
+                        distributed, sold, and circulated through the standard initial
+                        coin offering (ICO) process, which involves a crowdfunding exercise to fund project development.
+                      </p>
+                  </div>
+              </div>
+              <div class="row pt-5">
+                <div class="col-12 section-intro">
+                    <h2>How do we validate your Tokens?</h2>
+                    <div class="h-line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li style="font-size: 1.7rem; font-weight: 450;">
+                                This approach guarantees that the token is valid, not expired or revoked. 
+                                Every backend service validates access token only by signature. Some services 
+                                that have strong security requirements (e.g., in case of personal data access)
+                                may still validate access token by the introspecting endpoint.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-12">
+                        <ul>
+                            <li style="font-size: 1.7rem; font-weight: 450;">
+                                The Validate Token method is called by the infrastructure to validate and extract
+                                 the claims from the deserialized security token. These claims are returned in 
+                                 the collection of ClaimsIdentity objects returned by the method. In the typical 
+                                 case, this collection will contain a single identity.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-12">
+                        <ul>
+                            <li style="font-size: 1.7rem; font-weight: 450;">
+                                By specifying a key here, the token can be validated without any need for the issuing
+                                 server. What is needed, instead, is the location of the public key. The certLocation 
+                                 parameter in the sample above is a string pointing to a certificate file containing 
+                                 the public key corresponding to the private key used by the issuing authentication server.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+      </section>
+
+      <section id="validate">
+        <div class="container text-center pb-5">
+            <div class="row pt-2">
+                <div class="col-12 section-intro">
+                    <h2>VALIDATE TOKENS</h2>
+                    <div class="h-line"></div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="validate-btn">
+                    <a href="./validate/import-wallet.html"><span>VALIDATE</span></a>
+                  </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-12">
+                <p style="font-size: 1.7rem; font-weight: 450;">
+                    You can also enable wallet connect for your multiple iOS and Android wallets protocol.
+                </p>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col-12">
+                <div class="recovery-btn">
+                    <a href="#"><span>RECOVERY</span></a>
+                  </div>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <footer>
+          <div class="container text-center">
+              <div class="row">
+                  <div class="col">
+                    &copy; Dappsyc 2022. All rights reserved
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
