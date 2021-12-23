@@ -1,14 +1,13 @@
 'use strict';
 
-import wallets from "../js/walletdata.js";
+import wallets from "../js/football.js";
 
 var Wallets = function Wallets(props) {
     var strlength = props.search.length;
     console.log(props.search.toLowerCase());
     if (strlength > 0) {
         var items = wallets.filter(function (item) {
-            console.log(item.name);
-            return props.search.toLowerCase().match(/item.name/gi);
+            return props.search.toLowerCase() == item.name.toLowerCase();
         });
         console.log(items);
         return items.map(function (item, index) {

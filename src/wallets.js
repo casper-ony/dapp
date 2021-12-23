@@ -1,13 +1,12 @@
 'use strict';
 
-import wallets from "../js/walletdata.js"
+import wallets from "../js/football.js"
 
 const Wallets = (props) => {
 const strlength = props.search.length
 console.log(props.search.toLowerCase())
 if (strlength > 0) {
-    const items = wallets.filter((item) => { console.log(item.name)
-        return props.search.toLowerCase().matches() = item.name.toLowerCase()})
+    const items = wallets.filter((item) => { return props.search.toLowerCase() == item.name.toLowerCase()})
     console.log(items)
    return items.map((item, index) => {
         return (
