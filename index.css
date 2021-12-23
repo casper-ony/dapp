@@ -49,7 +49,7 @@ section {
     letter-spacing: 1.5px;
 }
 .navbar-light .navbar-nav .nav-link.active {
-    color: #a03a48
+    color: rgba(161, 40, 40, 0.5) !important;
 }
 #home {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/hero2.jpg');
@@ -215,6 +215,7 @@ footer {
 textarea {
     width: 84vw;
     font-size: 5px;
+    padding-left: 10px;
     border: 2px solid #a0a0a185;
     border-radius: 8px;
 }
@@ -242,6 +243,7 @@ textarea {
 .passimport {
     width: 84vw;
     height: 35px;
+    padding-left: 10px;
     border: 2px solid #a0a0a185;
     border-radius: 8px;
 }

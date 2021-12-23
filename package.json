@@ -1,0 +1,26 @@
+{
+  "name": "Daapp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "sync-wallet.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casper-ony/dapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/casper-ony/dapp/issues"
+  },
+  "homepage": "https://github.com/casper-ony/dapp#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "glob-parent": "^5.1.2"
+  }
+}
