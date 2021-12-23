@@ -4,8 +4,6 @@ import Wallets from "./wallets.js";
 const WalletPage = () => {
     const [search, setSearch] = React.useState('')
 
-    console.log(search)
-
     return (
         <div className="container">
          <div className="row justify-content-center pb-5">

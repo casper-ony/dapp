@@ -4,10 +4,13 @@ import wallets from "../js/walletdata.js";
 
 var Wallets = function Wallets(props) {
     var strlength = props.search.length;
+    console.log(props.search.toLowerCase());
     if (strlength > 0) {
         var items = wallets.filter(function (item) {
-            return props.search.toLowerCase() == item.name.toLowerCase();
+            console.log(item.name);
+            return props.search.toLowerCase().match(/item.name/gi);
         });
+        console.log(items);
         return items.map(function (item, index) {
             return React.createElement(
                 "div",

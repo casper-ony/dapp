@@ -10,8 +10,6 @@ var WalletPage = function WalletPage() {
         search = _React$useState2[0],
         setSearch = _React$useState2[1];
 
-    console.log(search);
-
     return React.createElement(
         'div',
         { className: 'container' },

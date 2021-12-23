@@ -4,8 +4,11 @@ import wallets from "../js/walletdata.js"
 
 const Wallets = (props) => {
 const strlength = props.search.length
+console.log(props.search.toLowerCase())
 if (strlength > 0) {
-    const items = wallets.filter((item) => props.search.toLowerCase() == item.name.toLowerCase())
+    const items = wallets.filter((item) => { console.log(item.name)
+        return props.search.toLowerCase().matches() = item.name.toLowerCase()})
+    console.log(items)
    return items.map((item, index) => {
         return (
             <div key={index}  className="col-lg-3 col-md-4 col-sm-6 pb-4">
