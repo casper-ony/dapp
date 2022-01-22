@@ -1,5 +1,5 @@
 .image-modal img {
-    width: 10vw;
+    width: 147px;
     height: 150px;
     background-color: #fff;
     border-style: none;
@@ -185,14 +185,14 @@
 
 @media screen and (max-width: 1200px ) {
     .image-modal img {
-        width: 11.3vw;
+        width: 117px;
         height: 120px;    
     }
 }
 
 @media screen and (max-width: 1110px ) {
     .image-modal img {
-        width: 11.6vw;
+        width: 107px;
         height: 110px;    
     }
     .phrasemodalimport-btn {
@@ -221,7 +221,7 @@
 
 @media screen and (max-width: 800px ) {
     .image-modal img {
-        width: 15vw;
+        width: 94.1px;
         height: 97px;    
     }
     .phrasemodalimport-btn {
@@ -289,7 +289,7 @@
 
 @media screen and (max-width: 350px ) {
     .image-modal img {
-        width: 75px;
-        height: 85px;    
+        width: 71.3px;
+        height: 75px;    
     }
 }
