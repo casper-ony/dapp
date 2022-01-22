@@ -249,7 +249,7 @@
 }
 @media screen and (max-width: 530px ) {
     .image-modal img {
-        width: 22vw;
+        width: 85px;
         height: 95px;    
     }
 }
@@ -284,5 +284,12 @@
     }
     .modalpassimport {
         width: 18em;
+    }
+}
+
+@media screen and (max-width: 350px ) {
+    .image-modal img {
+        width: 75px;
+        height: 85px;    
     }
 }
