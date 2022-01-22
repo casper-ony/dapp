@@ -269,7 +269,7 @@ textarea {
     color:rgb(26, 161, 55)
 }
 
-@media screen and (max-width: 996px ) {
+@media screen and (max-width: 1200px ) {
     #home {
         min-height: 90vh;
     }
