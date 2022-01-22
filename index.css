@@ -286,15 +286,15 @@ textarea {
         min-height: 90vh;
     }
     .phraseimport-btn {
-        font-size: .64em;
+        font-size: .60em;
         width: 22vw;
         }
     .keystoreimport-btn {
-        font-size: .64em;
+        font-size: .60em;
         width: 22vw;
     }
     .privateimport-btn {
-        font-size: .64em;
+        font-size: .60em;
         width: 22vw;
     }
 }
