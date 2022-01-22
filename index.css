@@ -268,19 +268,56 @@ textarea {
     font-size: 15px;
     color:rgb(26, 161, 55)
 }
-
 @media screen and (max-width: 1200px ) {
+
+    textarea {
+        width: 80vw;
+    }
+    .passimport {
+        width: 80vw;
+    }
+    .import-btn {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 996px ) {
     #home {
         min-height: 90vh;
     }
     .phraseimport-btn {
         font-size: .64em;
+        width: 22vw;
         }
     .keystoreimport-btn {
         font-size: .64em;
+        width: 22vw;
     }
     .privateimport-btn {
         font-size: .64em;
+        width: 22vw;
+    }
+}
+@media screen and (max-width: 991px ) {
+    textarea {
+        width: 70vw;
+    }
+    .passimport {
+        width: 70vw;
+    }
+    .import-btn {
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 600px ) {
+    textarea {
+        width: 76vw;
+    }
+    .passimport {
+        width: 76vw;
+    }
+    .import-btn {
+        width: 76vw;
     }
 }
 @media screen and (max-width: 450px ) {
@@ -288,5 +325,27 @@ textarea {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/hero3.jpg');
         min-height: 90vh;
     }
+    textarea {
+        width: 84vw;
+    }
+    .passimport {
+        width: 84vw;
+    }
+    .import-btn {
+        width: 84vw;
+    }
+}
+@media screen and (max-width: 320px ) {
+.phraseimport-btn {
+    font-size: .45em;
+
+    }
+.keystoreimport-btn {
+    font-size: .45em;
+   
+}
+.privateimport-btn {
+    font-size: .45em;
+}
 }
 
