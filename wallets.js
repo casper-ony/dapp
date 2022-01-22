@@ -4,7 +4,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
 import WalletModal from "./wallet-modal.js";
 
-import wallets from "../js/football.js";
+import wallets from "./football.js";
 
 var Wallets = function Wallets(props) {
    var _React$useState = React.useState(''),

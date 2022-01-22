@@ -1,7 +1,7 @@
 'use strict';
 import WalletModal from "./wallet-modal.js";
 
-import wallets from "../js/football.js";
+import wallets from "./football.js";
 
 const Wallets = (props) => {
   const [walletItem, setWalletItem] = React.useState('')
