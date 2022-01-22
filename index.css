@@ -319,6 +319,16 @@ textarea {
     .import-btn {
         width: 76vw;
     }
+    .phraseimport-btn {
+
+        width: 25vw;
+        }
+    .keystoreimport-btn {
+        width: 25vw;
+    }
+    .privateimport-btn {
+        width: 25vw;
+    }
 }
 @media screen and (max-width: 450px ) {
     #home {
