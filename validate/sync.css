@@ -12,7 +12,7 @@
     box-shadow: none !important;
 }
 .form-control:focus {
-    border: 1px solid rgba(172, 168, 168, 0.856) !important;
+    border: 1px solid rgba(201, 201, 201, 0.856) !important;
     box-shadow: none !important;
 }
 .wallet-title h5{
@@ -20,6 +20,169 @@
     color: rgba(70, 67, 67, 0.815); 
     font-size: 1.1em
 }
+.btn-close {
+    box-shadow: none !important;
+}
+.modal-radius {
+    border-radius: 20px !important;
+}
+.modal-header {
+    border-top-right-radius: 1.1rem !important;
+    border-top-left-radius: 1.1rem !important;
+    background-color: #D4D2D5 !important;
+}
+.modal-content {
+    border-radius: 1.1rem !important;
+}
+.modalbox {
+    width: 25em;
+    height: 4em;
+    border: 1px solid rgba(199, 26, 26, 0.918);
+    border-radius: 0.9rem;
+}
+.btn-connect {
+    border: 1px solid rgb(66, 64, 64) !important;
+    background-color: rgb(66, 64, 64) !important;
+    font-size: 0.75em !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+
+}
+.modalbox2 {
+    width: 25em;
+    height: 4em;
+    border: 1px solid rgba(97, 95, 95, 0.918);
+    border-radius: 0.9rem;
+}
+.modal-body {
+    display: flex;
+    justify-content: center;
+}
+.modalconnect {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 0.9em;
+    color: rgba(199, 26, 26, 0.918);
+}
+.modalencrypt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modalsync {
+    padding-top: 0.9em;
+}
+.modalencrypttext {
+    padding-top: 0.5em;
+}
+.modalencryptname {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgba(68, 66, 66, 0.863);
+}
+.modalencryptsess {
+    font-size: 0.74em;
+    color: rgba(119, 115, 115, 0.863);
+}
+.modalimage img {
+    width: 1.6em;
+    height: 1.5em;
+}
+.modalimport-img img {
+    width: 1.8em;
+    height: 1.7em;
+}
+.phrasemodalimport-btn {
+    font-size: .8em;
+    width: 16em;
+    height: 2.8em;
+    border: none;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(88, 120, 188);
+}
+.keystoremodalimport-btn {
+    font-size: .8em;
+    width: 16em;
+    height: 2.8em;
+    border: none;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.privatemodalimport-btn {
+    font-size: .8em;
+    width: 16em;
+    height: 2.8em;
+    border: none;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.modalimport-textarea {
+    width: 36em;
+    height: 10em;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 2px solid #a0a0a185;
+    border-radius: 8px;
+}
+.modalimport-btn {
+    color: #fff;
+    width: 38em;
+    height: 2.8em;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(42, 73, 141);
+}
+.modalimport-btn:hover {
+    background-color: rgb(59, 100, 189);
+}
+#modalphrase-import {
+    display: block;
+}
+
+#modalkeystore-import {
+    display: none;
+}
+#modalprivatekey-import {
+    display: none;
+}
+.modalpassimport {
+    width: 36em;
+    height: 3em;
+    padding-left: 10px;
+    border: 2px solid #a0a0a185;
+    border-radius: 8px;
+}
+.walletname-none {
+    display: none !important;
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 @media screen and (max-width: 1200px ) {
     .image-modal img {
         width: 11.3vw;
@@ -32,16 +195,94 @@
         width: 11.6vw;
         height: 110px;    
     }
+    .phrasemodalimport-btn {
+        font-size: .75em;
+        width: 10em;
+    }
+    .keystoremodalimport-btn {
+        font-size: .75em;
+        width: 10em;
+    }
+    .privatemodalimport-btn {
+        font-size: .75em;
+        width: 10em;
+    }
+    .modalimport-textarea {
+        width: 26em;
+        height: 9em;
+    }
+    .modalimport-btn {
+        width: 26em;
+    }
+    .modalpassimport {
+        width: 26em;
+    }
 }
+
 @media screen and (max-width: 800px ) {
     .image-modal img {
         width: 15vw;
+        height: 97px;    
+    }
+    .phrasemodalimport-btn {
+        font-size: .75em;
+        width: 10em;
+    }
+    .keystoremodalimport-btn {
+        font-size: .75em;
+        width: 10em;
+    }
+    .privatemodalimport-btn {
+        font-size: .75em;
+        width: 10em;
+    }
+    .modalimport-textarea {
+        width: 26em;
+        height: 9em;
+    }
+    .modalimport-btn {
+        width: 27em;
+    }
+    .modalpassimport {
+        width: 25em;
+    }
+}
+@media screen and (max-width: 530px ) {
+    .image-modal img {
+        width: 19.9vw;
         height: 95px;    
     }
 }
-@media screen and (max-width: 630px ) {
-    .image-modal img {
-        width: 22vw;
-        height: 85px;    
+
+@media screen and (max-width: 520px ) {
+    .modalbox {
+        width: 20em;
+        height: 4em;
+    }
+    .modalbox2 {
+        width: 20em;
+        height: 4em;
+    }
+    .phrasemodalimport-btn {
+        font-size: .7em;
+        width: 8em;
+    }
+    .keystoremodalimport-btn {
+        font-size: .7em;
+        width: 8em;
+    }
+    .privatemodalimport-btn {
+        font-size: .7em;
+        width: 8em;
+    }
+    .modalimport-textarea {
+        width: 18em;
+        height: 8em;
+    }
+    .modalimport-btn {
+        width: 17.9em;
+    }
+    .modalpassimport {
+        width: 18em;
     }
 }

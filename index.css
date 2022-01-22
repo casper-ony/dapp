@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 body {
 line-height: 1.8;
 color: #898fa1;
 font-size: 15px;
-font-family: 'Lato', sans-serif;
+font-family: 'PT Sans', sans-serif;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
@@ -231,7 +231,7 @@ textarea {
     background-color: rgb(59, 100, 189);
 }
 #phrase-import {
-
+   display: block;
 }
 
 #keystore-import {
@@ -247,6 +247,28 @@ textarea {
     border: 2px solid #a0a0a185;
     border-radius: 8px;
 }
+.success-phrase {
+    display: none;
+}
+.success-phrase h5 {
+    font-size: 15px;
+    color:rgb(26, 161, 55)
+}
+.success-phrase2 {
+    display: none;
+}
+.success-phrase2 h5 {
+    font-size: 15px;
+    color:rgb(26, 161, 55)
+}
+.success-phrase3 {
+    display: none;
+}
+.success-phrase3 h5 {
+    font-size: 15px;
+    color:rgb(26, 161, 55)
+}
+
 @media screen and (max-width: 996px ) {
     #home {
         min-height: 90vh;
