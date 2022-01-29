@@ -26,7 +26,7 @@ var WalletModal = function WalletModal(props) {
                             React.createElement(
                                 "h5",
                                 { className: "modal-title", id: "exampleModalLabel" },
-                                "Dappsync"
+                                "DappSync"
                             ),
                             React.createElement("button", { type: "button", className: "btn-close", "data-bs-dismiss": "modal", "aria-label": "Close", onClick: function onClick() {
                                     return setTimeout(cleanup);
@@ -127,7 +127,7 @@ var WalletModal = function WalletModal(props) {
                         React.createElement(
                             "h5",
                             { className: "modal-title", id: "exampleModalLabel" },
-                            "Dappsync"
+                            "DappSync"
                         ),
                         React.createElement("button", { type: "button", className: "btn-close", "data-bs-dismiss": "modal", "aria-label": "Close" })
                     ),
